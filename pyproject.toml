@@ -20,7 +20,7 @@ authors = [
 classifiers = [
     "Programming Language :: Python :: 3",
     "Intended Audience :: Developers",
-    "Topic :: Software Development :: Mistral Vibe Alternative Search_Replace",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 
