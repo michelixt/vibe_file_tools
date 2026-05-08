@@ -1,0 +1,1 @@
+uv run  --with vibe_file_tools --no-project -- python -m vibe_file_tools.mcp_tool
