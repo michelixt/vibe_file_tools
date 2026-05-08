@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vibe-file-tools"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for file manipulation tools as temporary alternative to mistral's own in Windows (bug)."
 readme = "README.md"
 license = "MIT"
@@ -25,7 +25,7 @@ classifiers = [
 
 
 [project.scripts]
-vibe-file-tools = "vibe_file_tools.__main__:main"
+vibe-file-tools = "vibe_file_tools.mcp_tool:main"
 
 [project.gui-scripts]
-vibe-file-tools-win-cli = "vibe_file_tools.__main__:main"
+vibe-file-tools-win-cli = "vibe_file_tools.mcp_tool:main"
