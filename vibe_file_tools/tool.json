@@ -1,0 +1,79 @@
+{
+  "name": "vibe_file_tools",
+  "description": "Enhanced file search/replace operations for Windows compatibility",
+  "version": "1.0.0",
+  "author": "Vibe Agent",
+  "license": "MIT",
+  "transport": "stdio",
+  "command": "python",
+  "args": ["tools/vibe_file_tools/mcp_tool.py"],
+  "methods": {
+    "search_replace": {
+      "description": "Safe search/replace with backup and error handling",
+      "parameters": {
+        "file_path": {
+          "type": "string",
+          "description": "Path to the file to modify",
+          "required": true
+        },
+        "search_text": {
+          "type": "string",
+          "description": "Exact text to search for (including whitespace)",
+          "required": true
+        },
+        "replace_text": {
+          "type": "string",
+          "description": "Text to replace with",
+          "required": true
+        }
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "success": {"type": "boolean", "description": "Whether the operation succeeded"},
+          "message": {"type": "string", "description": "Status message"},
+          "file_path": {"type": "string", "description": "Path to the modified file"},
+          "error": {"type": "string", "description": "Error message if failed"}
+        }
+      }
+    },
+    "direct_search_replace": {
+      "description": "Direct search/replace without backup (faster but less safe)",
+      "parameters": {
+        "file_path": {
+          "type": "string",
+          "description": "Path to the file to modify",
+          "required": true
+        },
+        "search_text": {
+          "type": "string",
+          "description": "Exact text to search for (including whitespace)",
+          "required": true
+        },
+        "replace_text": {
+          "type": "string",
+          "description": "Text to replace with",
+          "required": true
+        }
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "success": {"type": "boolean", "description": "Whether the operation succeeded"},
+          "message": {"type": "string", "description": "Status message"},
+          "file_path": {"type": "string", "description": "Path to the modified file"},
+          "error": {"type": "string", "description": "Error message if failed"}
+        }
+      }
+    }
+  },
+  "capabilities": [
+    "file_manipulation",
+    "text_processing"
+  ],
+  "dependencies": [],
+  "environment": {
+    "PYTHONPATH": "."
+  },
+  "timeout": 30
+}

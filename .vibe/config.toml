@@ -1,0 +1,20 @@
+
+
+[[mcp_servers]]
+name = "vibe_file_tools"
+transport = "stdio"
+command = "uv"
+args = [
+    "run",
+    "python",
+    "-m",
+    "vibe_file_tools.mcp_tool",
+]
+
+[vibe_file_tools_search_replace]
+permission = "always"
+
+[vibe_file_tools_direct_search_replace]
+permission = "always"
+
+

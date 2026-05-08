@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-file-tools"
+version = "0.1.0"
+description = "MCP server for file manipulation tools as temporary alternative to mistral's own in Windows (bug)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp",
+]
+
+authors = [
+{"name"= "Michel", "email"= "github.michel@ixflow.tech"},
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Mistral Vibe Alternative Search_Replace",
+]
+
+
+[project.scripts]
+vibe-file-tools = "vibe_file_tools.__main__:main"
+
+[project.gui-scripts]
+vibe-file-tools-win-cli = "vibe_file_tools.__main__:main"

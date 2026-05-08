@@ -1,0 +1,2 @@
+# Disable some tools for this agent
+disabled_tools = ["search_replace"]
