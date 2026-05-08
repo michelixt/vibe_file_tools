@@ -8,6 +8,8 @@ Due to vibe mistral's builtin search_replace function not working decently on Wi
 pip install vibe_file_tools
 ```
 
+<https://pypi.org/project/vibe-file-tools/>
+
 # Usage
 
 Run the MCP server:
